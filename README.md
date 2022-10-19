@@ -33,7 +33,7 @@ python sample_onnx.py
 デフォルト：512
 
 # Reference
-* [informative-drawings]([https://github.com/bryandlee/animegan2-pytorch](https://github.com/carolineec/informative-drawings))
+* [informative-drawings](https://github.com/carolineec/informative-drawings)
 
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
