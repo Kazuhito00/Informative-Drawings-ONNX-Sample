@@ -1,1 +1,1 @@
-# Informative-Drawings--ONNX-Sample
+# Informative-Drawings-ONNX-Sample
