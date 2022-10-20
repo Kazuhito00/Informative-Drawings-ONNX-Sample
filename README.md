@@ -4,6 +4,12 @@
 ONNXに変換したモデルも同梱しています。<br>
 変換自体を試したい方はColaboratoryなどで[Informative-Drawings-Convert2ONNX.ipynb](Informative-Drawings-Convert2ONNX.ipynb)を使用ください。<br>
 
+# ONNX Model
+以下3種類のモデルをコミットしています
+* anime_style_512x512.onnx
+* contour_style_512x512.onnx
+* opensketch_style_512x512.onnx
+
 # Requirement(ONNX推論)
 * OpenCV 4.5.3.56 or later
 * onnxruntime-gpu 1.9.0 or later <br>※onnxruntimeでも動作しますが、推論時間がかかるのでGPUをお勧めします
