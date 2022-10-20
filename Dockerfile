@@ -13,11 +13,11 @@ ENV LANG=en_US.UTF-8
 
 RUN apt update && \
     apt install -y  -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" keyboard-configuration && \
-    apt install -y git xterm wget python3-pip && \
+    apt install -y git xterm wget python3-pip python3-opencv && \
     apt -y clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install onnxruntime-gpu opencv-python
+RUN pip install onnxruntime-gpu
 
 WORKDIR /workdir
 RUN git clone https://github.com/Kazuhito00/Informative-Drawings-ONNX-Sample.git
