@@ -18,7 +18,6 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip install onnxruntime-gpu opencv-python
-RUN 
 
 WORKDIR /workdir
 RUN git clone https://github.com/Kazuhito00/Informative-Drawings-ONNX-Sample.git
