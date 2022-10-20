@@ -27,5 +27,5 @@ WORKDIR /workdir/Informative-Drawings-ONNX-Sample
 CMD ["bash"]
 # ================================
 # docker build . -t informative_drawings
-# docker run --rm -it -e DISPLAY=$DISPLAY --privileged --device /dev/video0:/dev/video0:mwr --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix informative_drawings python sample_onnx.py
+# docker run --rm -it -e DISPLAY=$DISPLAY --privileged --device /dev/video0:/dev/video0:mwr --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix informative_drawings python3 sample_onnx.py
 
