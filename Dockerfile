@@ -21,10 +21,11 @@ RUN pip install onnxruntime-gpu opencv-python
 
 WORKDIR /workdir
 RUN git clone https://github.com/Kazuhito00/Informative-Drawings-ONNX-Sample.git
+WORKDIR /workdir/Informative-Drawings-ONNX-Sample
 
 # USE Usb Camera
 CMD ["bash"]
 # ================================
 # docker build . -t informative_drawings
-# docker run --rm -it -e DISPLAY=$DISPLAY --privileged --device /dev/video0:/dev/video0:mwr --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix informative_drawings /bin/python sample_onnx.py
+# docker run --rm -it -e DISPLAY=$DISPLAY --privileged --device /dev/video0:/dev/video0:mwr --gpus all -v /tmp/.X11-unix:/tmp/.X11-unix informative_drawings python sample_onnx.py
 
