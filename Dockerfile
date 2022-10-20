@@ -13,7 +13,7 @@ ENV LANG=en_US.UTF-8
 
 RUN apt update && \
     apt install -y  -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" keyboard-configuration && \
-    apt install -y git xterm wget python3-pip
+    apt install -y git xterm wget python3-pip && \
     apt -y clean && \
     rm -rf /var/lib/apt/lists/*
 
